@@ -6,14 +6,18 @@
     <title>Basted</title>
   </head>
   <body>
-    What's the best way to have your eggs?<br /><br /><br /><br />
-    <a onclick='basted()'>I don't know! Tell me!</a>
+    How should you have your eggs done?<br /><br /><br /><br />
+    <a class='big-button' onclick='basted()'>Tell me!</a>
     <br /><br /><br /><br /><div id='basted'></div>
   </body>
 </html>
 
 <script>
 function basted() {
-  document.getElementById('basted').innerHTML = "BASTED!"
+  document.getElementById('basted').innerHTML = "BASTED!<br /><br /><a onclick='unbasted()' style='font-size: 13px'>ok, I get it...</a>";
+}
+
+function unbasted() {
+  document.getElementById('basted').innerHTML = "";
 }
 </script>
